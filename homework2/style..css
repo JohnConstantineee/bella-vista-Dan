@@ -64,19 +64,29 @@ color:red;
     text-align: center;
     letter-spacing:1.4px;
     padding: 25px 30px;
+    margin-bottom: 20px;
     color: #373737
 }
 
-.square-block{
-    margin-left: 530px;
+.square-conteiner{
     width: 191px;
-    height: 51px;
-    line-height:50px;
+    margin: 0 auto;
+}
+
+.active-text{
     text-align: center;
     letter-spacing:2.4px;
+    line-height:50px;
     border-radius: 5px;
+    color: #ffffff;
     background:red;
-    color: white;
+    margin-bottom: 20px;
+
+}
+
+.square-block{
+    text-decoration: none;
+
 }
 
 .content-last-container{
