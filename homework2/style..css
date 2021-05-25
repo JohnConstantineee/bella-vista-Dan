@@ -4,14 +4,13 @@
     font-family: sans-serif;
 }
 
-
 .nav-menu-conteiner{
     width: 1280px;
     margin: 0 auto;
     padding: 30px;
     text-align: center;
-
 }
+
 
 .nav-menu-item{
     display: inline-block;
@@ -66,10 +65,6 @@ color:red;
     letter-spacing:1.4px;
     padding: 25px 30px;
     color: #373737
-}
-
-.block{
-    padding: 25px;
 }
 
 .square-block{
