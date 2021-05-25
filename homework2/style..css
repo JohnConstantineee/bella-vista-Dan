@@ -5,10 +5,9 @@
 }
 
 .nav-menu-conteiner{
-    width: 1280px;
-    margin: 0 auto;
     padding: 30px;
     text-align: center;
+
 }
 
 
@@ -25,26 +24,19 @@
 color:red;
 }
 
-.main{
-    width: 1280px;
-    margin: 0 auto;
-}
-
-
 .pictures {
     width: 100%;
 }
 
-
 .main-conteiner{
     width: 1280px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .main-heading{
     word-spacing: 7px;
     padding: 25px 25px;
-    text-align: center;
     letter-spacing:2.4px;
     color: #373737;
 }
@@ -52,7 +44,6 @@ color:red;
 .main-center{
     Font-size: 18px;
     line-height: 25px;
-    text-align: center;
     letter-spacing:1.4px;
     padding: 25px 30px;
     color: #373737
@@ -61,31 +52,25 @@ color:red;
 .main-end{
     Font-size: 18px;
     line-height: 25px;
-    text-align: center;
     letter-spacing:1.4px;
     padding: 25px 30px;
     margin-bottom: 20px;
     color: #373737
 }
 
-.square-conteiner{
-    width: 191px;
-    margin: 0 auto;
-}
 
-.active-text{
-    text-align: center;
-    letter-spacing:2.4px;
-    line-height:50px;
-    border-radius: 5px;
-    color: #ffffff;
-    background:red;
-    margin-bottom: 20px;
-
-}
-
-.square-block{
+.button{
+    display: inline-block;
+    padding: 18px 43px 18px 43px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
     text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid #FF0000;
+    color: #FFFFFF;
+    background: #FF0000;
 
 }
 
