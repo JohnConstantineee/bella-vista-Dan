@@ -1,7 +1,67 @@
-.body{
+body {
     font-family: sans-serif;
 }
-
-.ticket{
-
+.ticket {
+    margin: 100px auto;
+    width: 1000px;
+    background: #F3F1C9;
+}
+.ticket-info {
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+    "title title title title title"
+    "pass pass pass pass platform"
+    "dep dep arr arr platform"
+    "date time car seat platform";
+}
+.ticket-info-title {
+    grid-area: title;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #F3F1C9;
+    background-color: #000;
+}
+.ticket-info-passenger {
+    grid-area: pass;
+    padding: 15px;
+    border: 1px solid #000;
+}
+.ticket-info-depart {
+    grid-area: dep;
+    padding: 15px;
+    border: 1px solid #000;
+}
+.ticket-info-arrive {
+    grid-area: arr;
+    padding: 15px;
+    border: 1px solid #000;
+}
+.ticket-info-date {
+    grid-area: date;
+    padding: 15px;
+    border: 1px solid #000;
+}
+.ticket-info-time {
+    grid-area: time;
+    padding: 15px;
+    border: 1px solid #000;
+}
+.ticket-info-car {
+    grid-area: car;
+    padding: 15px;
+    border: 1px solid #000;
+}
+.ticket-info-seat {
+    grid-area: seat;
+    padding: 15px;
+    border: 1px solid #000;
+}
+.ticket-info-platform {
+    grid-area: platform;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #000;
 }
