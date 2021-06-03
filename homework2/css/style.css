@@ -1,65 +1,66 @@
+
 * {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
-
-.nav-menu-conteiner{
-    padding: 30px;
-    text-align: center;
-
+.conteiner{
+    width: 1145px;
+    margin: 0 auto;
+}
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
-
-.nav-menu-item{
-    display: inline-block;
-}
-
-.nav-menu-link{
-    font-size: 20px;
+.nav-menu-link {
+    font-size: 18px;
+    line-height: 18px;
     font-weight: bold;
     text-decoration: none;
     letter-spacing:2.4px;
-    padding: 25px 25px;
-color:red;
+    padding-left: 36px;
+    padding-right: 36px;
+    color:red;
 }
 
 .pictures {
     width: 100%;
 }
 
-.main-conteiner{
-    width: 1280px;
-    margin: 0 auto;
+.content {
+    display: flex;
+    justify-content: space-between;
     text-align: center;
 }
 
-.main-heading{
+.main-heading {
     word-spacing: 7px;
     padding: 25px 25px;
     letter-spacing:2.4px;
     color: #373737;
 }
 
-.main-center{
-    Font-size: 18px;
-    line-height: 25px;
+.main-center {
+    Font-size: 16px;
+    line-height: 26px;
     letter-spacing:1.4px;
-    padding: 25px 30px;
+    padding-bottom: 28px;
     color: #373737
 }
 
-.main-end{
-    Font-size: 18px;
-    line-height: 25px;
+.main-end {
+    Font-size: 16px;
+    line-height: 26px;
     letter-spacing:1.4px;
-    padding: 25px 30px;
     margin-bottom: 20px;
     color: #373737
 }
 
-
-.button{
+.button {
     display: inline-block;
     padding: 18px 43px 18px 43px;
     font-style: normal;
@@ -71,26 +72,17 @@ color:red;
     border: 1px solid #FF0000;
     color: #FFFFFF;
     background: #FF0000;
-
 }
 
-.content-last-container{
-    width: 1280px;
-    margin: 0 auto;
-}
-
-.text-right{
-    padding: 30px;
+.ending-text {
     text-align: right;
+    margin-top: 82px;
+    margin-bottom: 29px;
+}
+.text-right {
     font-size: 16px;
     font-weight: bold;
     line-height: 20px;
     letter-spacing:2.4px;
-    margin-bottom: 5px;
-    margin-right: 150px;
     color: #373737;
 }
-
-
-
-

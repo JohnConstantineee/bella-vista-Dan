@@ -1,12 +1,8 @@
 
-.hero {
-    margin: 0 auto;
-}
-
 .hero-image {
     background-size: cover;
     background-position: center;
-    background-image: url("img/header-background04.jpg");
+    background-image: url(../img/header-background04.jpg);
 }
 
 .a-conteiner {
@@ -59,9 +55,9 @@
     padding: 27px 26px;
 }
 
-.b-conteiner {
+.conteiner {
     width: 1170px;
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 .heading-text {
@@ -69,7 +65,7 @@
     padding-top: 164px;
     Font-size: 27px;
     Line-height: 37px;
-color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 .button {
@@ -91,17 +87,12 @@ color: #FFFFFF;
     border-radius: 4px;
     padding: 16px 29px 17px 30px;
     text-decoration: none;
-   background: #14B9D5;
+    background: #14B9D5;
     color: #FFFFFF;
 }
 
 .hero-background {
-background: #F2F2F2;
-}
-
-.b-container {
-    width: 1170px;
-    margin: 0 auto;
+    background: #F2F2F2;
 }
 
 .head-text {
@@ -110,7 +101,7 @@ background: #F2F2F2;
     Font-size: 27px;
     Line-height: 37px;
     color:#18B4CF;
-text-align: center;
+    text-align: center;
 }
 
 .team-blog {
@@ -138,7 +129,7 @@ text-align: center;
 }
 
 .team-child{
-width: 100%;
+    width: 100%;
 }
 
 .hero2 {
@@ -148,12 +139,7 @@ width: 100%;
 .image {
     background-size: cover;
     background-position: center;
-background-image: url("img/parallax-bg1.jpeg");
-}
-
-.y-conteiner {
-    width: 1170px;
-    margin: 0 auto;
+    background-image: url(../img/parallax-bg1.jpeg);
 }
 
 .grid-text{

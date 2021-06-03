@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -6,12 +7,12 @@
 
 .conteiner{
     width: 1280px;
-   margin: 0 auto;
+    margin: 0 auto;
 }
 
 .hero{
     justify-content: space-between;
-    padding: 63px;
+    padding-top: 63px;
 }
 
 .deepskyblue-text{
@@ -21,7 +22,7 @@
 .hero-logo{
     font-size: 80px;
     text-decoration: none;
-color: black;
+    color: black;
 }
 
 .inline-menu {
@@ -34,19 +35,15 @@ color: black;
 }
 
 .nav-menu-link {
+    display: flex;
+    padding: 26px 40px 19px 40px;
     color: #FFFFFF;
     text-decoration: none;
     font-size: 24px;
 }
 
-.inline-menu-item-active{
-    padding: 26px 40px 19px 40px;
-    border-left: 1px solid white;
-    background: #222F3A;
-}
 
 .inline-menu-item {
-    padding: 26px 40px 19px 40px;
     border-left: 1px solid #ffffff;
 }
 
@@ -56,7 +53,7 @@ color: black;
 }
 
 .list-menu {
-   display: flex;
+    display: flex;
     justify-content: space-between;
     margin-bottom: 54px;
 }
@@ -67,33 +64,17 @@ color: black;
     border: 1px solid #000000;
 }
 
-.vertical-item {
-    padding: 25px 44px 25px 44px;
-}
-
 .vertical-menu-link {
+    display: flex;
+    padding: 25px 44px 25px 44px;
     color: #485863;
     font-size: 27px;
     line-height: 27px;
     text-decoration: none;
 }
 
-.vertical-item-active {
-    padding: 27px 78px 27px 38px;
-    display: flex;
-    justify-content: center;
-    background: #DBDBDB;
-}
-
-.vertical-menu-link-active {
-    color: #000000;
-    font-size: 27px;
-    line-height: 27px;
-    text-decoration: none;
-}
-
 .content {
-    margin-left: 54px;
+    width: 885px;
 }
 
 .image-title{
@@ -133,12 +114,9 @@ color: black;
     display: flex;
     justify-content: space-between;
     width: 928px;
+    align-items: center;
     height: 69px;
     padding-left: 40px;
-}
-
-.ending-block{
-    padding-top: 20px;
 }
 
 .ending-block-list{
@@ -148,21 +126,11 @@ color: black;
     text-decoration: none;
 }
 
-.ending-menu-link{
-    color: #3181A6;
-    font-size: 28px;
-    line-height: 28px;
-    text-decoration: none;
-    padding-bottom: 12px;
-    border-bottom: 1px solid #3181A6;
-}
-
 .copyright {
+    padding-right:40px ;
+    display: flex;
     color: #010101;
     font-size: 24px;
     line-height: 24px;
-    padding-top: 20px;
-    padding-right: 40px;
-
+   align-items: center;
 }
-
