@@ -5,7 +5,7 @@
     background-image: url(../img/header-background04.jpg);
 }
 
-.a-conteiner {
+.conteiner1 {
     display: flex;
     justify-content: space-between;
     background: #313131;
@@ -15,11 +15,9 @@
     display: flex;
 }
 
-.menu-icon{
-    padding: 22px 27px 22px 27px;
-}
 
 .logo {
+text-decoration: none;
     Font-size: 22px;
     padding: 22px 27px 22px 27px;
     color:#FFFFFF;
@@ -31,13 +29,6 @@
 
 .item {
     padding: 28px 35px 28px 35px;
-}
-
-.link-active {
-    text-decoration: none;
-    Font-size: 15px;
-    line-height: 20px;
-    color:#14B9D5;
 }
 
 .link {
@@ -55,6 +46,10 @@
     padding: 27px 26px;
 }
 
+.hero1{
+    padding-top: 164px;
+}
+
 .conteiner {
     width: 1170px;
     margin: 0 auto;
@@ -62,7 +57,6 @@
 
 .heading-text {
     text-align: center;
-    padding-top: 164px;
     Font-size: 27px;
     Line-height: 37px;
     color: #FFFFFF;
@@ -115,7 +109,6 @@
 .team {
     margin-bottom: 30px;
     background: #FFFFFF;
-    width: calc((100% / 3) - 20px);
 }
 
 .end-text {
@@ -164,11 +157,8 @@
     display: grid;
     grid-auto-flow: column;
     justify-content: space-between;
-}
-
-.grid-team-child {
-    margin-top: 196px;
-    margin-bottom: 191px;
+    padding-top:196px;
+    padding-bottom: 203px;
 }
 
 .portfolio-text {
@@ -184,7 +174,6 @@
 .image-together {
     display: grid;
     grid-auto-flow: column;
-    width: 100vw;
 }
 
 .image-together-child {
@@ -210,7 +199,6 @@
     grid-row: 1 / 2;
     display: grid;
     background: #F2F2F2;
-
 }
 
 .box3 {

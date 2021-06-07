@@ -2,16 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>classwork9</title>
+  <title>EXAMPLES</title>
   <link rel="stylesheet" href="css/examples.css">
 </head>
 <body>
-<section class="card-list">
-  <div class="card">
-  <h2 class="card-title">Learn Python Programming Mastercalss</h2>
-  <a href="" class="card-link">More</a>
-    <img src="img/Python%20Icon.svg" alt="p1" class="card-bg-img">
+
+<form class="sign-in" action="">
+  <!--(label.sign-in-label>input.sign-in-field)*2-->
+  <label class="sign-in-label">
+    Username
+    <input type="text" required class="sign-in-field" placeholder="Enter username">
+  </label>
+
+  <label class="sign-in-label">
+    Password
+    <input type="password" class="sign-in-field" placeholder="Enter password">
+  </label>
+
+  <label class="sign-in-label">
+    Message
+    <textarea class="sign-in-field" placeholder="Enter message"></textarea>
+  </label>
+
+  <div class="sign-in-radio-wrap">
+    <label class="sign-in-radio">
+      <input class="sign-in-radio-input" name="sex" type="radio">
+      <span class="sign-in-checkmark"></span>
+      Male
+    </label>
+
+    <label class="sign-in-radio">
+      <input class="sign-in-radio-input" name="sex" type="radio">
+      <span class="sign-in-checkmark"></span>
+      Female
+    </label>
   </div>
-</section>
+
+  <input class="sign-in-btn" type="submit" value="Log in">
+</form>
+
 </body>
 </html>
+
+
