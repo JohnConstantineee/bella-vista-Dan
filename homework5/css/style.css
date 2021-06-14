@@ -6,8 +6,8 @@
     background-image: url("../img/background 1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 .hero {
     display: flex;
@@ -23,6 +23,7 @@
     content: url("../img/logo 2.svg");
 }
 .hero-logo:hover .hero-logo-title {
+    transition-duration: 2s;
     color:#F26522;
 }
 
@@ -44,21 +45,17 @@
     flex-direction: column;
     text-align: right;
 }
-.hero-contacts-mail {
+.hero-contacts-connection {
     text-decoration: none;
     color:#FFFFFF;
     margin-bottom: 19px;
 }
-.hero-contacts-phone {
-    text-decoration: none;
-    color:#FFFFFF;
-}
-.hero-contacts-mail:hover {
+
+.hero-contacts-connection:hover {
+    transition-duration: 2s;
     color:#F26522;
 }
-.hero-contacts-phone:hover {
-    color:#F26522;
-}
+
 .content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -91,27 +88,27 @@
     box-sizing: border-box;
 }
 
-.text1 {
+.content-link-item-information-price-meaning{
     font-size: 10px;
     line-height: 10px;
     color: #FFFFFF;
     margin-bottom: 6px;
 }
-.text2 {
+.content-link-item-information-price-meaning-two{
     font-size: 20px;
     line-height: 20px;
     color: #FFFFFF;
 }
-.text3 {
+.link-item-information-details {
     font-size: 14px;
     line-height: 14px;
     color: #FFFFFF;
 }
-.text3::after {
+.link-item-information-details::after {
     margin-left: 16px;
 }
 
-.text3::after {
+.link-item-information-details::after {
     content: url("../img/Vector 1.svg");
     margin-left: 16px;
 }
@@ -127,6 +124,7 @@
     top: 171px;
 }
 .content-link:hover .content-link-item-text {
+    transition-duration: 2s;
     color: #F26522;
 }
 

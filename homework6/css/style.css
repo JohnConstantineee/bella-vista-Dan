@@ -13,7 +13,6 @@
 
 .menu {
     background: rgba(0, 0, 0, 0.4);
-    margin-bottom: 54px;
 }
 
 .navigation-menu {
@@ -75,6 +74,7 @@
 }
 
 .ending-text {
+    font-family: 'Ubuntu', sans-serif;
     padding-left: 27px;
     padding-right: 79px;
     letter-spacing:1px;
@@ -109,8 +109,7 @@
     position: relative;
     background: #FFFFFF;
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.52);
-    margin-bottom: 74px;
-    margin-top: 54px;
+    margin-top: 53px;
     padding: 29px 60px 38px 60px;
 }
 .main-menu-item {
