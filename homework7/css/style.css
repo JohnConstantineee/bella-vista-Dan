@@ -1,0 +1,38 @@
+.heading {
+   max-width: 100%;
+    background: rgba(20,20,20,1);
+    overflow: hidden;
+    position: relative;
+}
+
+.content {
+    display: flex;
+    max-width: 50vw;
+    height: 100vh;
+    margin: 0 auto;
+    perspective: 400px;
+}
+
+.heading-text {
+    color: #ffc909;
+    font-size: 3vw;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-align: justify;
+    position: relative;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+    animation:  play 30s linear backwards infinite ;
+    transform: rotateX(20deg);
+
+}
+
+.head {
+   padding-bottom: 50px;
+    text-align: center;
+}
+
+@keyframes play {
+    0% { top:0; transform: translateZ(0) rotateX(30deg) translate3d(0, 35rem, 0) }
+    100% { top:-2000px; transform: translateZ(-2500px) rotateX(50deg);
+       }
+}
