@@ -7,8 +7,6 @@
     background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
 }
 
 .menu {
@@ -38,14 +36,14 @@
     display: flex;
 }
 .icon-team-link{
+    margin-left: 15px;
+    padding: 18px 27px 18px 27px;
     display: flex;
 }
 
 .vector-icon {
-    margin-left: 15px;
     width: 21px;
     height: 24px;
-    padding: 18px 27px 18px 27px;
 }
 
 .vector-icon:hover path {
