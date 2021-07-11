@@ -9,7 +9,6 @@ lastName: prompt('Введите фамилию'),
     }
 }
 const newUser = createNewUser();
-console.log(createNewUser());
 console.log(newUser.getLogin());
 
 
