@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div>
+    <input type="text" id="new-good-input">
+    <button id="add-btn">Add</button>
+</div>
+<ul class="shopping-list">
+</ul>
+<script>
+    /**
+     * Зробити список покупок з можливістю
+     * додавати нові товари
+     *
+     * В поле вводу ми можемо ввести назву нового елементу
+     * для списку покупок
+     * При натисканні на кнопку Add введене значення
+     * потрібно додавати в кінець списку покупок, а
+     * поле вводу очищувати
+     **/
+</script>
+<script>
+    const input = document.getElementById('new-good-input')
+    const addButton=document.getElementById('add-btn')
+    const list=document.querySelector('.shopping-list')
+    addButton.addEventListener('click',()=>{
+            const newGood = input.value;
+            const li = document.createElement('li')
+            li.innerText=newGood;
+            list.append(li);
+            input.value = ''
+        }
+    )
+</script>
+</body>
+</html>

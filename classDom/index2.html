@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+<style>
+    .order[data-order-state="new"] {
+        color: green;
+    }
+    .order[data-order-state="pending"] {
+        color: blue;
+    }
+    .order[data-order-state="canceled"] {
+        color: red;
+    }
+</style>
+<div id="order"
+     class="order"
+     data-order-state="new">
+     data-attr-with-long-name = "thevalue"
+    A new order.</div>
+<script src="js/script.js">
+    let order = document.getElementById('order');
+    console.log(order.dataset.orderState);
+    console.log(order.dataset.attrWithLong-name);
+    order.dataset.orderState = 'pending';
+</script>
+</body>
+</html>

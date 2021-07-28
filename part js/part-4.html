@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input type="text" id="input">
+<button id="validate-btn">Validate</button>
+<script>
+    /**
+     * При натисканні на кнопку Validate відображати
+     * VALID зеленим кольром, якщо значення проходить валідацію
+     * INVALID червоним кольором, якщо значення не проходить валідацію
+     *
+     * Правила валідації значення:
+     * - значення не пусте
+     *
+     * ADVANCED
+     * Правила валідації значення:
+     * - повинно містити щонайменше 5 символів
+     * - не повинно містити пробілів
+     *
+     */
+    const button = document.getElementById('validate-btn');
+    const input = document.getElementById('input');
+    const text = document.createElement('p');
+    document.body.append(text);
+    button.addEventListener('click', () => {
+        if (input.value === '') {
+            text.style.color = 'red';
+            text.innerText = 'INVALID';
+        } else {
+            text.style.color = 'green';
+            text.innerText = 'VALID';
+        }
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        .square {
+            background-color: sandybrown;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<div class="square"></div>
+<script>
+    const square = document.querySelector('.square');
+    let positionLeft = 0;
+    let positionTop = 0;
+    document.addEventListener('keydown', event => {
+        if (event.key === 'ArrowRight') {
+
+            positionLeft += 10;
+            square.style.left = positionLeft + 'px';
+        }
+        if (event.key === 'ArrowLeft') {
+            positionLeft -= 10;
+            square.style.left = positionLeft + 'px';
+        }
+        if (event.key === 'ArrowDown') {
+            positionTop += 10;
+            square.style.top = positionTop + 'px';
+        }
+        if (event.key === 'ArrowUp') {
+            positionTop -= 10;
+            square.style.top = positionTop + 'px';
+        }
+    });
+
+</script>
+</body>
+</html>

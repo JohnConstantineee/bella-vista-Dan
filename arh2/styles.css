@@ -21,7 +21,11 @@ body {
   font-weight: 500;
 }
 
-.active {
-  color: orange;
-  font-size: 22px;
+a {
+  color: blueviolet;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: rebeccapurple;
 }
