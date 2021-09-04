@@ -22,8 +22,9 @@
 
 
 
-let i = 1000;
+let arr = ["Я", "изучаю", "JavaScript"];
 
-while (i) {
-    alert( i--);
-}
+
+arr.splice(2, 3, "сложный", "язык");
+
+alert( arr );

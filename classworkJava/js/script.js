@@ -80,40 +80,40 @@
 // console.log (`Добро пожаловать, родившийся азазазв ${birthDate}, ${userName}, ${userSurName}`);
 
 
-let fullname = null;
-let mark = null;
-let markLetter = null;
-let oneMore =
-do{
-    fullname = prompt("Введите имя_фамилию")}
-while(fullname === null || fullname.split(' ').length < 2);
-do{
-    mark = +prompt("Введите балы")
-} while (isNaN(mark) || mark < 0 || mark >100);
-if (mark < 25){
-    markLetter = 'F';
-} else if (mark < 50) {
-    markLetter = 'E';
-} else if (mark < 55){
-    markLetter = 'D';
-} else if (mark < 60){
-    markLetter = 'D+';
-}else if (mark < 65){
-    markLetter = 'C-';
-}else if (mark < 70){
-    markLetter = 'C';
-}else if (mark < 75){
-    markLetter = 'C+'
-}else if (mark < 80){
-    markLetter = 'B-'
-}else if (mark < 85){
-    markLetter = 'B'
-}else if (mark < 90){
-    markLetter = 'B+'
-}else if (mark < 95){
-    markLetter = 'A-'
-}else{
-    markLetter = 'A'
-}
-console.log(fullname, markLetter);
-oneMore = prompt('Eсть-ли необходимость сконвертировать оценку для ещё одного студента ?'). toLowerCase()
+// let fullname = null;
+// let mark = null;
+// let markLetter = null;
+// let oneMore =
+// do{
+//     fullname = prompt("Введите имя_фамилию")}
+// while(fullname === null || fullname.split(' ').length < 2);
+// do{
+//     mark = +prompt("Введите балы")
+// } while (isNaN(mark) || mark < 0 || mark >100);
+// if (mark < 25){
+//     markLetter = 'F';
+// } else if (mark < 50) {
+//     markLetter = 'E';
+// } else if (mark < 55){
+//     markLetter = 'D';
+// } else if (mark < 60){
+//     markLetter = 'D+';
+// }else if (mark < 65){
+//     markLetter = 'C-';
+// }else if (mark < 70){
+//     markLetter = 'C';
+// }else if (mark < 75){
+//     markLetter = 'C+'
+// }else if (mark < 80){
+//     markLetter = 'B-'
+// }else if (mark < 85){
+//     markLetter = 'B'
+// }else if (mark < 90){
+//     markLetter = 'B+'
+// }else if (mark < 95){
+//     markLetter = 'A-'
+// }else{
+//     markLetter = 'A'
+// }
+// console.log(fullname, markLetter);
+// oneMore = prompt('Eсть-ли необходимость сконвертировать оценку для ещё одного студента ?'). toLowerCase()
