@@ -16,3 +16,4 @@ if (confirm('Are you sure you want to continue?')){
          alert("test");
     }
 }
+console.log
