@@ -12,8 +12,4 @@ if (confirm('Are you sure you want to continue?')){
      else {
         alert('You are not allowed to visit this website.');
     }
-     else {
-         alert("test");
-    }
 }
-console.log
