@@ -25,27 +25,27 @@
 
 
 
-// let firstNumber = +prompt('Введите первое число');
-// let secondNumber = +prompt('Введите второе число');
-// let operationNumber = prompt('Введите операцию +,-,*,/, ');
-//
-// function calc(firstNumber, secondNumber ,operationNumber) {
-// switch (operationNumber) {
-//     case '+':
-//         console.log(firstNumber + secondNumber);
-//         break;
-//     case '-':
-//         console.log(firstNumber - secondNumber);
-//         break;
-//     case '*':
-//         console.log(firstNumber * secondNumber);
-//         break;
-//     case '/':
-//         console.log(firstNumber / secondNumber);
-//         break;
-// }
-// }
-// calc(firstNumber, secondNumber, operationNumber);
+let firstNumber = +prompt('Введите первое число');
+let secondNumber = +prompt('Введите второе число');
+let operationNumber = prompt('Введите операцию +,-,*,/, ');
+
+function calc(firstNumber, secondNumber ,operationNumber) {
+switch (operationNumber) {
+    case '+':
+        console.log(firstNumber + secondNumber);
+        break;
+    case '-':
+        console.log(firstNumber - secondNumber);
+        break;
+    case '*':
+        console.log(firstNumber * secondNumber);
+        break;
+    case '/':
+        console.log(firstNumber / secondNumber);
+        break;
+}
+}
+calc(firstNumber, secondNumber, operationNumber);
 
 
 // function createNewUser() {
@@ -84,18 +84,6 @@
 //     alert(message);
 // }
 // showMessage();
-
-
-let number = +prompt('Введите число');
-for (let i = 0; i <= number; i++) {
-    if (i % 5 === 0) {
-        console.log( i );
-    }
-    console.log(number);
-}
-if (number < 5 ) {
-    alert('Sorry, no numbers');
-}
 
 
 
