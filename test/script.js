@@ -76,29 +76,6 @@
 // console.log(number);
 
 
-// let user = prompt('enter your name');
-// let age = prompt('enter age');
-//
-// while (isNaN(+age) || age === null) {
-//     age = prompt('again', age);
-// }
-//
-// while (user = true || user === null) {
-//     user = prompt('again', user);
-// }
-//
-// if (age < 18) {
-//     alert('You are not allowed to visit this website');
-// } else if (age => 18 && age <= 22) {
-//     confirm('Are you sure you want to continue?');
-//     if (true) {
-//         alert(`Welcome, ${user}`);
-//     } else {
-//         alert('You are not allowed to visit this website.');
-//     }
-// } else {
-//     alert(`Welcome, ${user}`);
-// }
 
 
 // let userName = prompt('What your name ?');
@@ -109,17 +86,21 @@
 // showMessage();
 
 
-
-
-function calc () {
-    let sum = 0;
-    for (let i = 0; i < arguments.length; i++) {
-        sum += arguments[i];
+let number = +prompt('Введите число');
+for (let i = 0; i <= number; i++) {
+    if (i % 5 === 0) {
+        console.log( i );
     }
-    return sum;
+    console.log(number);
+}
+if (number < 5 ) {
+    alert('Sorry, no numbers');
 }
 
-console.log(calk(5,10,15));
+
+
+// let double = n => n * 2;
+// alert( double(7) );
 
 
 

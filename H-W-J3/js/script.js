@@ -19,12 +19,4 @@
 // console.log(calc(numFirst,numSecond,operator));
 
 
-
-
-
-let arr = ["Я", "изучаю", "JavaScript"];
-
-
-arr.splice(2, 3, "сложный", "язык");
-
-alert( arr );
+let number =  +prompt("Введите число");
