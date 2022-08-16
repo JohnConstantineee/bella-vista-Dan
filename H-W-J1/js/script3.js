@@ -3,7 +3,6 @@ let age = prompt(' and age?');
 
 if (age < 18) {
     alert('You are not allowed to visit this website.');
-
 } if (age > 22) {
     alert('Welcome:' + name);
 } if (age >= 18 && age <= 22 ) {
