@@ -25,27 +25,27 @@
 
 
 
-let firstNumber = +prompt('Введите первое число');
-let secondNumber = +prompt('Введите второе число');
-let operationNumber = prompt('Введите операцию +,-,*,/, ');
-
-function calc(firstNumber, secondNumber ,operationNumber) {
-switch (operationNumber) {
-    case '+':
-        console.log(firstNumber + secondNumber);
-        break;
-    case '-':
-        console.log(firstNumber - secondNumber);
-        break;
-    case '*':
-        console.log(firstNumber * secondNumber);
-        break;
-    case '/':
-        console.log(firstNumber / secondNumber);
-        break;
-}
-}
-calc(firstNumber, secondNumber, operationNumber);
+// let firstNumber = +prompt('Введите первое число');
+// let secondNumber = +prompt('Введите второе число');
+// let operationNumber = prompt('Введите операцию +,-,*,/, ');
+//
+// function calc(firstNumber, secondNumber ,operationNumber) {
+// switch (operationNumber) {
+//     case '+':
+//         console.log(firstNumber + secondNumber);
+//         break;
+//     case '-':
+//         console.log(firstNumber - secondNumber);
+//         break;
+//     case '*':
+//         console.log(firstNumber * secondNumber);
+//         break;
+//     case '/':
+//         console.log(firstNumber / secondNumber);
+//         break;
+// }
+// }
+// calc(firstNumber, secondNumber, operationNumber);
 
 
 // function createNewUser() {
@@ -91,7 +91,15 @@ calc(firstNumber, secondNumber, operationNumber);
 // alert( double(7) );
 
 
+function makeUser(firstName, lastName) {
+    return {
+        firstName: name,
+        lastName: lastName,
+    };
+}
 
+const user = makeUser("", );
+prompt('Enter your name and last name');
 
 
 
