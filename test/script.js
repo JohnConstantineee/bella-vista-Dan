@@ -302,25 +302,154 @@ console.log(repeat("hello",3));*/
 // * - Делать поддержку выравнивания вложенных массивов не нужно.
 // */
 
-const arr1 = [1, 2, 3];
-const arr2 = [1, 2, 3];
-const arr3 = [1, 2, 3];
+// const arr1 = [1, 2, 3];
+// const arr2 = [1, 2, 3];
+// const arr3 = [1, 2, 3];
+//
+//
+// function unitedArrays(...args) {
+//     args.forEach((item, index) => {
+//         if (typeof item !== "object") {
+//             throw new Error(`Возникла ошибка в элементе номер : ${index}`);
+//         }
+//     });
+//     return [].concat(...args);
+// }
+// console.log(unitedArrays(arr1, arr2, arr3, "adadad"));
 
 
-function unitedArrays(...args) {
-    args.forEach((item, index) => {
-        if (typeof item !== "object") {
-            throw new Error(`Возникла ошибка в элементе номер : ${index}`);
-        }
-    });
-    return [].concat(...args);
+
+// let numb = [10, 20, 30];
+//
+// for (let value of numb) {
+//     console.log(value, "value before");
+//     value = value + [1,'s'];
+//     console.log(value, "value after")
+// }
+
+
+
+//     const info = ["aba", "aa", "ad", "vcd", "aba","a"];
+//     const result = info.filter(info => info.length > 2);
+// console.log(result);
+
+
+// let arr = [5, 2, 1, -10, 8];
+//
+// arr.sort((a, b) => b - a);
+//
+// alert( arr );
+
+
+/**
+ * Задание 1.
+ *
+ * Получить и вывести в консоль следующие элементы страницы:
+ * - По идентификатору (id): элемент с идентификатором list;
+ * - По классу — элементы с классом list-item;
+ * - По тэгу — элементы с тэгом li;
+ * - По CSS селектору (один элемент) — третий li из всего списка;
+ * - По CSS селектору (много элементов) — все доступные элементы li.
+ *
+ * Вывести в консоль и объяснить свойства элемента:
+ * - innerText;
+ * - innerHTML;
+ * - outerHTML.
+ */
+
+// console.log(document.getElementById('list'));
+// console.log(document.querySelectorAll('.list-item:nth-child(3)'));
+// console.log(document.querySelectorAll('.list-item')[3]);
+// console.log(document.getElementsByTagName('li'));
+// console.log(document.querySelectorAll('li'));
+// console.log(document.getElementsByClassName('sidebar')[0].innerText);
+
+
+/**
+ * Задание 2.
+ *
+ * Получить элемент с классом .remove.
+ * Удалить его из разметки.
+ *
+ * Получить элемент с классом .bigger.
+ * Заменить ему CSS-класс .bigger на CSS-класс .active.
+ *
+ * Условия:
+ * - Вторую часть задания решить в двух вариантах: в одну строку и в две строки.
+ */
+// document.querySelector('.remove').remove();
+// console.log(document.querySelectorAll('.remove'));
+// document.querySelector('.bigger').classList.replace('bigger', 'active');
+
+
+/**
+ * Задание 3.
+ *
+ * На экране указан список товаров с указанием названия и количества на складе.
+ *
+ * Найти товары, которые закончились и:
+ * - Изменить 0 на «закончился»;
+ * - Изменить цвет текста на красный;
+ * - Изменить жирность текста на 600.
+ *
+ * Требования:
+ * - Цвет элемента изменить посредством модификации атрибута style.
+ */
+// const collection = document.querySelectorAll('.store li');
+// collection.forEach(element  => {
+//     if (element.innerText.includes(': 0')) {
+//         element.innerText = element.innerText.replace(': 0',': out of stock');
+//         element.setAttribute('style','color: blue; font-weight: 600');
+//         // element.style.color = 'red'
+//         // element.style.fontWeight = '600'
+//     }
+// })
+
+
+let windowHeight = window.innerHeight
+let windowWidth = window.innerWidth
+
+let numberBlocks = prompt("Enter number")
+
+const blocks = []
+
+while (isNaN(numberBlocks)) {
+    numberBlocks = prompt("Enter number")
 }
-console.log(unitedArrays(arr1, arr2, arr3, "adadad"));
+
+function createBlock () {
+    return {
+        size: Math.floor(Math.random() * 100 + 100),
+        color: '#' + Math.floor(Math.random()*16777215).toString(16),
+    }
+}
+
+
+for (let i = 0; i < numberBlocks; i++) {
+    blocks.push(createBlock())
+}
 
 
 
+blocks.map(el => {
+    el.positionLeft = Math.floor(Math.random() * (windowWidth - el.size))
+    el.positionTop = Math.floor(Math.random() * (windowHeight - el.size))
+})
 
+console.log(blocks);
 
+function createElement (el) {
+    let block = document.createElement('div')
+    block.style.cssText =  `position: absolute; width: ${el.size}px; height: ${el.size}px; background-color: ${el.color}; top: ${el.positionTop}px; left: ${el.positionLeft}px`
+    return block;
+}
+
+blocks.forEach(el => document.body.append(createElement(el)))
+blocks.forEach((el, i) => {
+    setTimeout(() => {
+        document.body.append(createElement(el))
+    }, i * 3000);
+});
 
 
 
