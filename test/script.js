@@ -406,50 +406,161 @@ console.log(repeat("hello",3));*/
 // })
 
 
-let windowHeight = window.innerHeight
-let windowWidth = window.innerWidth
+// let windowHeight = window.innerHeight
+// let windowWidth = window.innerWidth
+//
+// let numberBlocks = prompt("Enter number")
+//
+// const blocks = []
+//
+// while (isNaN(numberBlocks)) {
+//     numberBlocks = prompt("Enter number")
+// }
+//
+// function createBlock () {
+//     return {
+//         size: Math.floor(Math.random() * 100 + 100),
+//         color: '#' + Math.floor(Math.random()*16777215).toString(16),
+//     }
+// }
+//
+//
+// for (let i = 0; i < numberBlocks; i++) {
+//     blocks.push(createBlock())
+// }
+//
+//
+//
+// blocks.map(el => {
+//     el.positionLeft = Math.floor(Math.random() * (windowWidth - el.size))
+//     el.positionTop = Math.floor(Math.random() * (windowHeight - el.size))
+// })
+//
+// console.log(blocks);
+//
+// function createElement (el) {
+//     let block = document.createElement('div')
+//     block.style.cssText =  `position: absolute; width: ${el.size}px; height: ${el.size}px; background-color: ${el.color}; top: ${el.positionTop}px; left: ${el.positionLeft}px`
+//     return block;
+// }
+//
+// blocks.forEach(el => document.body.append(createElement(el)))
+// blocks.forEach((el, i) => {
+//     setTimeout(() => {
+//         document.body.append(createElement(el))
+//     }, i * 3000);
+// });
 
-let numberBlocks = prompt("Enter number")
-
-const blocks = []
-
-while (isNaN(numberBlocks)) {
-    numberBlocks = prompt("Enter number")
-}
-
-function createBlock () {
-    return {
-        size: Math.floor(Math.random() * 100 + 100),
-        color: '#' + Math.floor(Math.random()*16777215).toString(16),
-    }
-}
-
-
-for (let i = 0; i < numberBlocks; i++) {
-    blocks.push(createBlock())
-}
+// const arr = ['hello', 'world', 'Kiev', 'Sport', 'Odessa', 'Live'];
+//
+// const accept = (arr, parent) => {
+//     const element = document.createElement('ul');
+//     element.innerHTML = arr.map(el =>`<li>${el}</li>`).join('')
+//     parent.append(element);
+// }
+// accept(arr, document.body);
+//
 
 
 
-blocks.map(el => {
-    el.positionLeft = Math.floor(Math.random() * (windowWidth - el.size))
-    el.positionTop = Math.floor(Math.random() * (windowHeight - el.size))
-})
+// const dataIceCream = [
+//     { name: "хрещатик", price: "7,99 uah" },
+//     { name: "100% пломбір", price: "2,50 uah" },
+//     { name: "maximus", price: "12,99 uah" },
+//     { name: "пташине молоко", price: "20,99 uah" },
+// ];
+//
+// const renderList = (dataIceCream, parent) => {
+//     const element = document.createElement('ul');
+//     // dataIceCream.forEach(el => element.innerHTML += `<li><h2>${el.name}</h2><p>${el.price}</p></li>`)
+//     element.innerHTML = dataIceCream.map(element => `<li><h2>${element.name}</h2><p>${element.price}</p></li>`).join('');
+//     parent.append(element);
+// }
+//
+// renderList(dataIceCream,document.body);
 
-console.log(blocks);
 
-function createElement (el) {
-    let block = document.createElement('div')
-    block.style.cssText =  `position: absolute; width: ${el.size}px; height: ${el.size}px; background-color: ${el.color}; top: ${el.positionTop}px; left: ${el.positionLeft}px`
-    return block;
-}
 
-blocks.forEach(el => document.body.append(createElement(el)))
-blocks.forEach((el, i) => {
-    setTimeout(() => {
-        document.body.append(createElement(el))
-    }, i * 3000);
-});
+
+
+
+//CLASSWORK
+
+// const music = Array.from(document.getElementById('bands').children)
+//
+// const checkBoxs = Array.from(document.musicFilters.querySelectorAll('input'))
+//
+// function filter() {
+//     music.forEach(el => filterChecked().includes(el.dataset.type) ? el.classList.remove('hidden') : el.classList.add('hidden'))
+//
+//
+//     console.log(filterChecked())
+// }
+//
+// function filterChecked() {
+//     return checkBoxs.map(el => el.checked ? el.name : false).filter(el => el)
+// }
+
+
+
+//
+// function insert () {
+//     const getText = document.insertForm.textarea.value;
+//     getWrapper.insertAdjacentHTML('beforeend', getText);
+// }
+//
+// const getWrapper = document.getElementById('wrapper');
+// document.insertForm.textarea.value = ''
+
+
+
+// const arr = ['apple', 'orange', 'banana', 'grape', 'mango',];
+//
+// const list = document.getElementById('wrapper');
+// const newList = document.createElement('ul');
+// list.append(newList)
+// newList.innerHTML = arr.map(element => `<li>${element}</Li>`).join('');
+// newList.addEventListener('click',function (event){
+//     newList.append(event.target);
+// })
+
+
+
+
+// const elements = document.querySelectorAll('body *');
+// let arr = [];
+// elements.forEach(el => arr.push(el.className));
+// console.log(new Set(arr));
+
+
+// рекурсия
+// const arr = []
+// function recurs (el) {
+//     arr.push(el.className)
+// if (el.hasChildNodes()) {
+//     for ( let i = 0; i < el.children.length; i++) {
+//         recurs(el.children[i])
+//     }
+//
+// } return new Set(arr)
+// }
+//
+// console.log(recurs(document.body));
+
+
+// END CLASSWORK
+
+
+// let arr = ["Kharkiv", "Kiev", ["Borispol", "Irpin"], "Odessa", "Lviv", "Dnieper"]
+//
+// const createElement = (arr, parent = document.body) => {
+//     const element = document.createElement('ol')
+//     const filter = (arr) => arr.reduce((start, curr) => start.concat(Array.isArray(curr) ? filter(curr) : <li>${curr}</li>), []).join(' ')
+//     element.innerHTML = filter(arr)
+//     parent.append(element)
+// }
+//
+// createElement(arr)
 
 
 

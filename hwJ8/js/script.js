@@ -1,7 +1,7 @@
 
 document.querySelectorAll('p');
-console.log(Array.from(document.querySelectorAll('p')));
 Array.from(document.querySelectorAll('p')).forEach(p => p.style.background = '#ff0000');
+console.log(Array.from(document.querySelectorAll('p')))
 const idEl = document.querySelector('#optionsList');
 console.log(idEl);
 console.log(idEl.parentElement);
