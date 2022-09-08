@@ -1,9 +1,0 @@
-p {
-    display: none;
-}
-
-@media not screen {
-    p {
-        display: block;
-    }
-}
