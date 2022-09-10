@@ -1,42 +1,46 @@
-/*#wrong {*/
-/*    color: red;*/
-/*}*/
-
-/*form {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    margin: 0 auto;*/
-/*}*/
-
-/*form input,*/
-/*form button,*/
-/*form label {*/
-/*    margin: 5px 0;*/
-/*    max-width: 250px;*/
-/*}*/
-
-.modal {
-    background-color: rgba(0,0,0,.3);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 999;
-    backdrop-filter: blur(2px);
+#wrong {
+    color: red;
 }
 
-.modal-content {
-    max-width: 300px;
+form {
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: white;
-    padding: 30px;
 }
 
-.input {
-    margin-top: 5px;
+form input,
+form button,
+form label {
+    margin: 5px 0;
+    max-width: 250px;
 }
+
+
+
+
+
+/*.modal {*/
+/*    background-color: rgba(0,0,0,.3);*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    z-index: 999;*/
+/*    backdrop-filter: blur(2px);*/
+/*}*/
+
+/*.modal-content {*/
+/*    max-width: 300px;*/
+/*    margin: 0 auto;*/
+/*    position: relative;*/
+/*    top: 50%;*/
+/*    transform: translateY(-50%);*/
+/*    background-color: white;*/
+/*    padding: 30px;*/
+/*}*/
+
+/*.input {*/
+/*    margin-top: 5px;*/
+/*}*/
 

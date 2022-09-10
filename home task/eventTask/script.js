@@ -22,13 +22,13 @@
 
 
 
-const button = document.querySelector('.left-button');
-function showConsole (event) {
-    console.log(event.type);
-    console.log(event.target); // показывает обьект на котрый плользователь навел мышью.
-}
-button.addEventListener('click', showConsole);
-button.addEventListener('mouseenter', showConsole);
+// const button = document.querySelector('.left-button');
+// function showConsole (event) {
+//     console.log(event.type);
+//     console.log(event.target); // показывает обьект на котрый плользователь навел мышью.
+// }
+// button.addEventListener('click', showConsole);
+// button.addEventListener('mouseenter', showConsole);
 
 
 // const button = document.querySelector('.container');
@@ -40,3 +40,17 @@ button.addEventListener('mouseenter', showConsole);
 //       showConsole();
 //      }
 //  });
+
+document.addEventListener('keydown',function (event){
+    console.log(`Нажата клавиша${event.code} (${event.key})`);
+});
+document.addEventListener('keyup', function (event){
+    console.log(`Отжата клавиша${event.code} (${event.key})`);
+});
+
+//
+// document.addEventListener('keydown', function (event){
+//     if (event.code === 'KeyZ' && (event.ctrlKey || event.metaKey)) {
+//         console.log('Отмена действия !');  // зажали ctrl + z получили в коносле "Отмена дейсвтия !"
+//     }
+// })
