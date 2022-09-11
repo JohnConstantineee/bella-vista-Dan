@@ -1,33 +1,13 @@
-.left-button {
-    border-radius: 4px;
+.buttons {
+    margin: 200px;
+}
+
+.button {
+
+    border-radius: 70px;
     padding: 16px 19px 17px 19px;
-    margin-right: 10px;
+    margin-right: 100px;
     text-decoration: none;
-    background: #89CA62;
-    color: #FFFFFF;
-}
-
-.right-button {
-    border-radius: 4px;
-    padding: 16px 29px 17px 30px;
-    text-decoration: none;
-    background: #14B9D5;
-    color: #FFFFFF;
-}
-
-.three-button {
-    border-radius: 4px;
-    padding: 16px 19px 17px 19px;
-    margin-right: 10px;
-    text-decoration: none;
-    background: salmon;
-    color: #FFFFFF;
-}
-
-.four-button {
-    border-radius: 4px;
-    padding: 16px 29px 17px 30px;
-    text-decoration: none;
-    background: fuchsia;
+    background: #ffc909;
     color: #FFFFFF;
 }

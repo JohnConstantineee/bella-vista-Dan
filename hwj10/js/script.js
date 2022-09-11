@@ -12,12 +12,12 @@ tabList.onclick = (event) => {
 
 
         if (tabActive !== clickedBth) {
-            tabActive?.classList.remove('active');
+            tabActive.classList.remove('active');
         }
         if (tabContent !== tabItem) {
-            tabContent?.classList.remove('tabs-content-item-active');
+            tabContent.classList.remove('tabs-content-item-active');
         }
-        tabItem.classList.add('tabs-content-item-active');
+        tabItem.classList.add('tabs-content-item-active')
         clickedBth.classList.add('active');
     }
 };
