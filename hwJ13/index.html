@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Banners</title>
+    <style>
+        .image-to-show {
+            width: 400px;
+            height: 400px;
+        }
+
+        .images {
+            display: flex;
+            justify-content: center;
+        }
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes fade-out {
+            from {
+                opacity: 1;
+            }
+            80% {
+                opacity: 0;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+
+        .fade-out {
+
+            animation: fade-out 3.0s linear;
+        }
+
+        .fade-in {
+            animation: fade-in 1.5s linear;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+<div class="images">
+    <img src="img/1.jpg" alt="image of game" class="image-to-show" />
+
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
