@@ -27,7 +27,7 @@ function slide(direction) {
                 slider.style.cssText = `transform: translateX( ${
                     currentIndex * width * -1
                 }px)`;
-            }
+            } else {currentIndex--}
             break;
         default:
             false;
