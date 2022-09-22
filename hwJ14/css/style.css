@@ -1,0 +1,171 @@
+.container {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.body-background-change {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/image 0.2.jpg");
+}
+
+.body-background {
+    background-image: url("../img/background 1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+.hero-logo {
+    transition: top 0.4s;
+    display: flex;
+    flex-direction: row;
+    margin: 51px 0 26px;
+    text-decoration: none;
+
+}
+
+.button {
+    display: flex;
+    margin: 51px 0 26px;
+    color: lightgoldenrodyellow;
+    background-color: rgb(28,28,28,0);
+    border: medium none;
+    border-radius: 12px;
+    font-size: 22px;
+}
+
+.button:hover {
+    transition-duration: 2s;
+    color:#F26522;
+}
+
+.hero-logo:hover .hero-logo-icon {
+    content: url("../img/logo 2.svg");
+}
+.hero-logo:hover .hero-logo-title {
+    transition-duration: 2s;
+    color:#F26522;
+}
+
+.hero-logo-title {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8px;
+    font-size: 29px;
+    line-height: 29px;
+    color:#FFFFFF;
+}
+.hero-logo-title-second_part {
+    font-size: 18px;
+    line-height: 18px;
+}
+.hero-contacts {
+    margin: 47px 0 17px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.hero-contacts-connection {
+    text-decoration: none;
+    color:#FFFFFF;
+    margin-bottom: 19px;
+}
+
+.hero-contacts-connection:hover {
+    transition-duration: 2s;
+    color:#F26522;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 49px;
+    grid-row-gap: 37px;
+    grid-column-gap: 61px;
+}
+.content-link {
+    text-decoration: none;
+}
+.content-link-item {
+    width: 300px;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-link-item-img-change {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content-link-item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content-link-item-information {
+    background-color: #F26522;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 14px 12px 16px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.content-link-item-information-price-meaning{
+    font-size: 10px;
+    line-height: 10px;
+    color: #FFFFFF;
+    margin-bottom: 6px;
+}
+.content-link-item-information-price-meaning-two{
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.link-item-information-details {
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+.link-item-information-details::after {
+    margin-left: 16px;
+}
+
+.link-item-information-details::after {
+    content: url("../img/Vector 1.svg");
+    margin-left: 16px;
+}
+
+.content-link-item-text {
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 20px;
+}
+.content-link:hover .content-link-item-information {
+    top: 171px;
+}
+.content-link:hover .content-link-item-text {
+    transition-duration: 2s;
+    color: #F26522;
+}
+
+.copyright-title {
+    font-size: 12px;
+    line-height: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-bottom: 20px;
+}
