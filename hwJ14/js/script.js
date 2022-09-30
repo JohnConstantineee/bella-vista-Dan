@@ -18,7 +18,11 @@ button.addEventListener('click', (event) => {
     images.classList.toggle('content-link-item-img-change');
 });
 
+<<<<<<< HEAD
     if(localStorage.getItem('gachi','boy') !== null) {
+=======
+    if(localStorage.getItem('gachi', 'boy') !== null) {
+>>>>>>> origin/master
         info.classList.toggle('body-background');
         info.classList.toggle('body-background-change');
         info.classList.contains('body-background') ? document.querySelectorAll('.content-link-item-img')[0].src = 'img/image1.jpg' : document.querySelectorAll('.content-link-item-img')[0].src = 'img/image%200.1.jpg';

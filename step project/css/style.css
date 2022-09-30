@@ -455,9 +455,6 @@ display: flex;
     grid-template-columns: repeat(4, 1fr);
 }
 
-.test {
-
-}
 
 
 .gallery-card-content {
