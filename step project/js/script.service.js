@@ -18,7 +18,15 @@ const btn = document.querySelector('.btn-b')
 btn.addEventListener('click',() => {
     document.querySelectorAll('.gallery-card-items').forEach(el => el.classList.add('card-active'));
     btn.style.display='none';
+
 })
+
+
+const btnAll = document.querySelector(`.service-tabs-title-b[data-work='All']`)
+btnAll.addEventListener('click', () => {
+    btn.style.display='';
+})
+
 
 document.querySelectorAll('.service-tabs-title-b').forEach(el => {
     el.addEventListener('click', () => {
@@ -29,6 +37,7 @@ document.querySelectorAll('.service-tabs-title-b').forEach(el => {
         if (el.dataset.work === 'All') {
             document.querySelectorAll(`.gallery-card-items[data-work='graphic-design']`).forEach(el => el.classList.add('card-active'))
             document.querySelectorAll(`.gallery-card-items[data-work='web-design']`).forEach(el => el.classList.add('card-active'))
+
         }
     })
 })
