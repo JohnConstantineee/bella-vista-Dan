@@ -90,7 +90,7 @@ display: flex;
 }
 
 .header-menu-link:hover::after {
-    margin-top: 44px;
+    margin-top: 49px;
     content: "";
     display: block;
     top: 68px;
@@ -592,6 +592,7 @@ display: flex;
     padding: 15px;
 }
 
+
 .blog-img-wrapper {
     position: relative;
     width: 100%;
@@ -610,13 +611,14 @@ display: flex;
     line-height: 39px;
 }
 
-.fc-gray:hover {
-    color: #18CFAB;
-    transition: color 300ms ease-in-out;
-}
 
 .blog-element-wrapper:hover span {
     background-color: #18CFAB;
+    transition: background-color 300ms ease-in-out;
+}
+
+.blog-element-wrapper:hover h6 {
+    color: #18CFAB;
     transition: background-color 300ms ease-in-out;
 }
 
