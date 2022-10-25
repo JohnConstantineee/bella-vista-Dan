@@ -1,0 +1,23 @@
+{
+  "name": "taskn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "indnex.js",
+  "scripts": {
+    "build": "gulp sass & gulp clone",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.4.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "http-server": "^14.1.1",
+    "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "dest": "^0.3.1"
+  }
+}

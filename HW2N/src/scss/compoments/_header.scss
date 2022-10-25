@@ -1,0 +1,53 @@
+
+
+.header {
+  position: relative;
+
+  &__burger-button {
+    color: black;
+    width: 44px;
+    height: 37px;
+    margin: 23px 0 23px 250px;
+  }
+
+  &__burger-button-svg{
+    justify-content: center;
+    align-self: center;
+  }
+
+  &__menu-list {
+    display: none;
+  }
+
+  &__picture {
+
+  }
+
+  &__picture-item {
+
+  }
+
+  &__burger-menu {
+    background-color: #F5F5F5;
+
+  }
+
+  &__burger-menu-item {
+    color: $mainColor;
+    font-size: 11px;
+    line-height: 22px;
+    text-transform: uppercase;
+    padding: 3px 0 3px 13px;
+  }
+}
+
+
+
+
+
+//@media (min-width: 520px) {
+//  .header__menu-list {
+//
+//  }
+//
+//}
