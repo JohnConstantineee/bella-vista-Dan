@@ -1,53 +1,94 @@
 
 
 .header {
+  @include flexDirection(flex, column);
   position: relative;
 
   &__burger-button {
-    color: black;
+    background-color: #000000;
+    border: none;
     width: 44px;
     height: 37px;
-    margin: 23px 0 23px 250px;
+    margin: 23px 0 23px 244px;
   }
 
-  &__burger-button-svg{
+  &__burger-button-svg {
     justify-content: center;
     align-self: center;
   }
 
   &__menu-list {
+    justify-content: space-between;
+    align-self: center;
     display: none;
+    margin: 41px 0 42px;
+    width: 80%;
   }
+
+  &__menu-list-item {
+    $mainColor: #4E4E4E;
+    font-weight: 400;
+    font-size: 11px;
+    cursor: pointer;
+  }
+
+  &__menu-list-item:hover{
+    color: $hover;
+  }
+
 
   &__picture {
 
   }
 
   &__picture-item {
-
+    width: 100%;
   }
 
   &__burger-menu {
+    width: 55%;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translateY(30%);
     background-color: #F5F5F5;
+    display: none;
 
   }
 
+  &__burger-menu--active {
+    display: flex;
+  }
+
+
   &__burger-menu-item {
-    color: $mainColor;
     font-size: 11px;
     line-height: 22px;
+    color: $mainColor;
     text-transform: uppercase;
     padding: 3px 0 3px 13px;
+  }
+
+  &__burger-menu-item:hover {
+    color: $hover;
+    background-color: #E5E5E5;
+
   }
 }
 
 
-
-
-
-//@media (min-width: 520px) {
-//  .header__menu-list {
-//
-//  }
-//
-//}
+@media (min-width: $tablet) {
+  .header {
+    &__menu-list {
+      display: flex;
+    }
+    &__burger-button {
+      display: none;
+    }
+    &__burger-menu {
+      display: none;
+    }
+  }
+}
