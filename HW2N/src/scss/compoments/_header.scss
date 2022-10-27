@@ -9,12 +9,20 @@
     border: none;
     width: 44px;
     height: 37px;
-    margin: 23px 0 23px 244px;
+    display: flex;
+    align-self: flex-end;
+    margin: 23px 0 23px;
+
   }
 
   &__burger-button-svg {
     justify-content: center;
     align-self: center;
+
+  }
+
+  &__burger-button-svg-close {
+   display: none;
   }
 
   &__menu-list {

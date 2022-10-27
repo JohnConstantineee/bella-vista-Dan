@@ -18,17 +18,10 @@
     margin-top: 30px;
   }
 
-  &__content:last-child {
+  &__content-block:last-child {
   display: none;
   }
 
-  &__content-block-img {
-
-  }
-
-  &__content-block-img-item {
-
-  }
 
   &__content-block-item {
     margin: 11px 0 10px;
@@ -112,7 +105,7 @@
       flex-direction: row;
     }
 
-    &__content:last-child {
+    &__content-block:last-child {
       display: flex;
     }
     &__content-block-item {
