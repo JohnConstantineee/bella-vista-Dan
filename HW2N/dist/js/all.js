@@ -4,5 +4,3 @@ burgerButton.addEventListener('click', e => {
     burgerMenu.classList.toggle('header__burger-menu--active')
     burgerButton.classList.toggle('active-burger')
 })
-
-console.log('')
