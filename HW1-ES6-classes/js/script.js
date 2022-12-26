@@ -5,13 +5,13 @@ class Employee {
         this.age = age;
         this.salary = salary;
     }
-    getName() { return this.name }
-    getAge() { return this.age }
-    getSalary() { return this.salary }
+    get Name() { return this.name }
+    get Age() { return this.age }
+    get Salary() { return this.salary }
 
-    setName(value) { this.name = value }
-    setAge(value) { this.age = value }
-    setSalary(value) { this.salary = value }
+    set Name(value) { this.name = value }
+    set Age(value) { this.age = value }
+    set Salary(value) { this.salary = value }
   }
 
 class Programmer extends Employee {
@@ -21,12 +21,17 @@ class Programmer extends Employee {
         this.lang = lang;
     }
 
-    getSalary() { return this.salary * 7 }
+    get Salary() { return this.salary * 3 }
 }
 
 const nikita = new Programmer('Nikita',25,19000,['ua','eng','ru'])
 const michael = new Programmer('Michael',24,19000,['ua','eng'])
 
 console.log(nikita,michael);
-console.log(nikita.getSalary());
-console.log(michael.getSalary());
+
+
+
+
+
+
+
