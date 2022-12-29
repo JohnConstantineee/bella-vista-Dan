@@ -38,13 +38,13 @@ const renderList = (list, parent = document.querySelector('#root')) => {
 
         } catch (e) {
             if (!el.author) {
-                console.log(e + ', Author:' + el.author);
+                console.error(e + ', Author:' + el.author);
             }
             if (!el.name) {
-                console.log(e + ', Book name:' + el.name);
+                console.error(e + ', Book name:' + el.name);
             }
             if (!el.price) {
-                console.log(e + ', Price:' + el.price);
+                console.error(e + ', Price:' + el.price);
             }
 
             }
@@ -54,4 +54,34 @@ const renderList = (list, parent = document.querySelector('#root')) => {
 }
 
 renderList(books)
+
+
+// const hasMissingKeys = (obj, keys) => {
+//     return keys.find(e => {
+//         if (obj.hasOwnProperty(e)) {
+//             return false;
+//         } else {
+//             return e;
+//         }
+//     })
+// }
+//
+// const createElementOnPage = (array) => {
+//     const div = document.querySelector("#root");
+//     const elementKey = ["author", "name", "price"];
+//     array.map(element => {
+//         try {
+//             if (element.author && element.name && element.price) {
+//                 div.insertAdjacentHTML("beforeend", `<ul> <li>author:${element.author}</li> <li>name:${element.name}</li> <li>price:${element.price}</li> </ul>`);
+//             } else {
+//                 const missingKeys = hasMissingKeys(element, elementKey);
+//                 throw new Error(`undefined element - ${missingKeys}`);
+//             }
+//         } catch (error) {
+//             console.error(error);
+//         }
+//     })
+// }
+// createElementOnPage(books);
+
 
