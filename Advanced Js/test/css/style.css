@@ -1,0 +1,49 @@
+.post {
+    display: flex;
+}
+.post__avatar {
+    padding: 20px;
+}
+.post__avatar-item {
+    border-radius: 50%;
+    height: 40px;
+}
+.post__body {
+    padding: 10px;
+}
+.post__body-header-info-fullName {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.post__header-info-mail {
+    font-weight: 600;
+    font-size: 12px;
+    color: gray;
+}
+.post__header-info-badge {
+    font-size: 14px;
+    margin: 0 10px 0 5px;
+    color: #00CBF6;
+}
+.post__header-title {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.post__body img {
+    width: 450px;
+    object-fit: contain;
+    border-radius: 20px;
+}
+.post__body-text p {
+    width: 450px;
+    font-size: 15px;
+}
+.post__deleteButton {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+

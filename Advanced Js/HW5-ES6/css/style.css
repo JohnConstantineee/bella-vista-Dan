@@ -1,0 +1,66 @@
+
+.user {
+    margin: 10px 0 5px 5px;
+    display: flex;
+}
+
+.user__avatar-info {
+    padding: 20px;
+}
+.user__avatar-item {
+    height: 50px;
+}
+
+.user__body-header-info {
+    display: flex;
+}
+
+.user__body-header-info-fullName {
+    margin-left: 30px;
+}
+
+.user__header-info-status {
+    color: #00CBF6;
+    font-weight: bold;
+    font-size: 15px;
+    padding:6px 10px 0 17px;
+}
+
+.user__header-info-mail {
+    font-weight: bold;
+    color: grey;
+    padding: 21px 10px 0 15px;
+}
+
+.user__tittle {
+    width: 450px;
+    font-weight: bold;
+    margin-left: 82px;
+}
+.user__img {
+    margin-left: 80px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.user__body-text {
+    font-weight: bold;
+    margin-left: 82px;
+    width: 450px;
+    font-size: 15px;
+}
+
+.user__deleteButton-item {
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+    margin: 20px 0 20px 215px;
+}
